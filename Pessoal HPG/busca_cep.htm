@@ -1,13 +1,16 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 	<head>
-		<title>Bem vindo ao website dos Correios</title>		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="windows-1252">
+<title>Bem vindo ao website dos Correios</title>		
 		<base href="http://www.correios.com.br"> 
     <script Language="JavaScript">
     function CriticaCampos()
     {
     if (document.Geral.Localidade.value == "")
     {
-    alert("Informe o nome completo da Cidade/Município/Distrito/Povoado. Para o DF poderá ser informado o nome da Região Administrativa (Lago Sul, Lago Norte, Cruzeiro, Taguatinga, etc) !!");
+    alert("Informe o nome completo da Cidade/MunicÃ­pio/Distrito/Povoado. Para o DF poderÃ¡ ser informado o nome da RegiÃ£o Administrativa (Lago Sul, Lago Norte, Cruzeiro, Taguatinga, etc) !!");
     document.Geral.Localidade.focus();
     return (false);
     } 
@@ -26,7 +29,7 @@
     }   
     if (Cont <= 0)
     {
-    alert("Informe o nome completo da Cidade/Município/Distrito/Povoado. Para o DF poderá ser informado o nome da Região Administrativa (Lago Sul, Lago Norte, Cruzeiro, Taguatinga, etc) !!");
+    alert("Informe o nome completo da Cidade/MunicÃ­pio/Distrito/Povoado. Para o DF poderÃ¡ ser informado o nome da RegiÃ£o Administrativa (Lago Sul, Lago Norte, Cruzeiro, Taguatinga, etc) !!");
     document.Geral.Localidade.focus();
     return (false);
     }   
@@ -134,7 +137,7 @@
 																	<option value=""></option>
 																	<option value="Avenida">Avenida</option>
 																	<option value="Bloco">Bloco</option>
-																	<option value="Praça">Praça</option>
+																	<option value="PraÃ§a">PraÃ§a</option>
 																	<option value="Quadra">Quadra</option>
 																	<option value="Rua">Rua</option>
 																	<option value="Outros">Outros</option>
@@ -146,7 +149,7 @@
 																	<td height="25"><input align=left maxLength=60 name=Logradouro size=32></td>
 																</tr>
 																<tr>
-																	<td height="25"><b>Nº/Lote/Apto/Casa:</b></td>
+																	<td height="25"><b>NÂº/Lote/Apto/Casa:</b></td>
 																	<td height="25"><input align=left maxlength=5 name=Numero size=5></td>
 																</tr>
 																<tr>
