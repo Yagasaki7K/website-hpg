@@ -9,7 +9,69 @@
 <title>Boletim Junho 2005</title>
 
 <style>
-body { background-image: url('images/cdbk0081.jpg'); }
+body {
+  margin: 0;
+  padding: 12px;
+  background-image: url('images/cdbk0081.jpg');
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+table {
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+body > table,
+body > div,
+body > div > center,
+body > div > center > table {
+  width: 100% !important;
+  max-width: 813px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td[valign="top"][width="141"],
+td[valign="top"][width="315"],
+td[valign="top"][width="357"] {
+  width: auto !important;
+}
+
+td[background] {
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 900px) {
+  body {
+    padding: 8px;
+  }
+
+  body > table,
+  body > div,
+  body > div > center,
+  body > div > center > table,
+  body > div > center > table > tbody > tr,
+  body > div > center > table > tbody > tr > td {
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  p {
+    word-break: break-word;
+  }
+}
 </style>
 </head>
 
