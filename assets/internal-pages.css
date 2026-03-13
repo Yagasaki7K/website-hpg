@@ -1,0 +1,35 @@
+body {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+table[background],
+td[background] {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.legacy-menu-link {
+  display: block;
+  width: 120px;
+  min-height: 24px;
+  padding: 4px 8px;
+  margin: 0 auto;
+  border: 1px solid #6e5c00;
+  border-radius: 2px;
+  background: linear-gradient(180deg, #f6dd7a 0%, #d6ac1b 100%);
+  color: #111;
+  font: bold 10px/1.2 Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.legacy-menu-link:hover,
+.legacy-menu-link:focus {
+  background: linear-gradient(180deg, #ffe89e 0%, #e5be35 100%);
+  outline: none;
+}
