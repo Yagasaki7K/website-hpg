@@ -19,7 +19,8 @@
     link.href = href;
 
     var target = getParam(applet, 'target');
-    if (target) {
+    var isMobileMenu = window.matchMedia('(max-width: 900px)').matches;
+    if (target && !(isMobileMenu && target === '_blank')) {
       link.target = target;
       if (target === '_blank') {
         link.rel = 'noopener noreferrer';
